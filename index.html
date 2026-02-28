@@ -186,7 +186,15 @@
                 responsive: true,
                 maintainAspectRatio: false,
                 scales: {
-                    x: { beginAtZero: true, max: 4, title: { display: true, text: 'スコア' } },
+                    x: {
+                        beginAtZero: true,
+                        max: 4,
+                        ticks: {
+                            stepSize: 1,
+                            precision: 0
+                       },
+                       title: { display: true, text: 'スコア' }
+                    },
                     y: { ticks: { font: { size: 10 }, autoSkip: false } }
                 },
                 plugins: {
